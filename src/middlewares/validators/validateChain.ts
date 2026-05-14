@@ -1,5 +1,5 @@
 import type { Request, Response, NextFunction } from "express";
-import { ValidationChain, validationResult } from "express-validator";
+import { type ValidationChain, validationResult } from "express-validator";
 
 export default function validateChain(validationChain: ValidationChain[]) {
     return [
