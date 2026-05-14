@@ -3,6 +3,6 @@ import indexController from "../controllers/indexController.js";
 
 const indexRouter = Router();
 
-indexRouter.route("/").get(indexController.get);
+indexRouter.route("/").get(indexController.index);
 
 export default indexRouter;

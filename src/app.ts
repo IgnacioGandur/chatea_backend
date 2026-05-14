@@ -5,6 +5,8 @@ import expressSession from "express-session";
 import { PrismaSessionStore } from "@quixo3/prisma-session-store";
 import prisma from "./db/client.js";
 import passport from "passport";
+import notFound from "./middlewares/notFound.js";
+import errorsHandler from "./middlewares/errorsHandler.js";
 
 const app = express();
 
@@ -40,5 +42,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 app.use(router);
+app.use(notFound);
+app.use(errorsHandler);
 
 export default app;

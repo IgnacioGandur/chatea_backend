@@ -1,5 +1,5 @@
 import { Router } from "express";
-import indexRouter from "./index.js";
+import indexRouter from "./indexRouter.js";
 import authRouter from "./authRouter.js";
 
 const router = Router({ mergeParams: true });
