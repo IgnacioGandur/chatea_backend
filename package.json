@@ -39,8 +39,12 @@
     "dependencies": {
         "@prisma/adapter-pg": "^7.8.0",
         "@prisma/client": "^7.8.0",
+        "@types/bcryptjs": "^2.4.6",
         "@types/cors": "^2.8.19",
+        "@types/express-validator": "^2.20.33",
+        "bcryptjs": "^3.0.3",
         "cors": "^2.8.6",
+        "express-validator": "^7.3.2",
         "pg": "^8.20.0"
     }
 }
