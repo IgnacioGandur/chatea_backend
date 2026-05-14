@@ -23,7 +23,10 @@
     "homepage": "https://github.com/IgnacioGandur/chatea_backend#readme",
     "devDependencies": {
         "@tsconfig/node22": "^22.0.5",
+        "@types/bcryptjs": "^2.4.6",
+        "@types/cors": "^2.8.19",
         "@types/express": "^5.0.6",
+        "@types/express-validator": "^2.20.33",
         "@types/node": "^25.7.0",
         "@types/pg": "^8.20.0",
         "dotenv": "^17.4.2",
@@ -39,9 +42,6 @@
     "dependencies": {
         "@prisma/adapter-pg": "^7.8.0",
         "@prisma/client": "^7.8.0",
-        "@types/bcryptjs": "^2.4.6",
-        "@types/cors": "^2.8.19",
-        "@types/express-validator": "^2.20.33",
         "bcryptjs": "^3.0.3",
         "cors": "^2.8.6",
         "express-validator": "^7.3.2",
