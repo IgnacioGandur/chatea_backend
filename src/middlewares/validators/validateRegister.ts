@@ -1,6 +1,6 @@
 import { body } from "express-validator";
 import validateChain from "./validateChain.js";
-import checkIfUserExists from "./custom-validators/checkIfUserExists.js";
+import checkIfUsernameIsAlreadyTaken from "./custom-validators/checkIfUsernameIsAlreadyTaken.js";
 
 export const regex = /^[\w.-]{3,30}$/;
 
@@ -14,7 +14,7 @@ const chain = [
         .matches(regex)
         .withMessage("Username can only contain letters, numbers and hyphens.")
         .bail()
-        .custom(checkIfUserExists),
+        .custom(checkIfUsernameIsAlreadyTaken),
 ];
 
 const validateUserRegister = validateChain(chain);
